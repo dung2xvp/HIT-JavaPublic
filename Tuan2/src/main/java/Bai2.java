@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Bai2 {
     public static void changeArr (int[] arr) {
         for (int i = 1; i < arr.length - 1; i++) {
