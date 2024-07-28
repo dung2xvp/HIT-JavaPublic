@@ -3,7 +3,7 @@ public class Bai2 {
     public static void changeArr (int[] arr) {
         for (int i = 1; i < arr.length - 1; i++) {
             if (i % 2 != 0) {
-                arr[i] += (arr[i + 1] - arr[i - 1]);
+                arr[i] += Math.abs(arr[i + 1] - arr[i - 1]);
             }
         }
     }
@@ -15,7 +15,7 @@ public class Bai2 {
             arr[i] = sc.nextInt();
         }
         if(n % 2 == 0) {
-            arr[n-1] += arr[n-2];
+            arr[n-1] += Math.abs(arr[n-2]);
             changeArr(arr);
         }
         else {
