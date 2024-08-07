@@ -64,7 +64,7 @@ public class StudentDemo {
     }
     //Sua thong tin
     public static void menuSuaTT () {
-        System.out.println("<<<<<<<<<<<<  Chon thong tin can sua  >>>>>>>>>>>");
+        System.out.println("<<<<<<<<<<<<Chon thong tin can sua>>>>>>>>>>>");
         System.out.println("1. Nam sinh");
         System.out.println("2. Dia chi");
         System.out.println("3. TX1");
@@ -86,7 +86,7 @@ public class StudentDemo {
                 switch (input) {
                     case 1:
                         System.out.print("Nhap nam sinh moi: ");
-                        int newYob = sc.nextInt();
+                        int newYob = sc.nextInt();sc.nextLine();
                         std.setYob(newYob);
                         System.out.println("Nam sinh da sua.");
                         menu();
@@ -98,28 +98,28 @@ public class StudentDemo {
                         menu();
                     case 3:
                         System.out.print("Nhap diem TX1 moi: ");
-                        double newTx1 = sc.nextDouble();
+                        double newTx1 = sc.nextDouble();sc.nextLine();
                         std.setTx1(newTx1);
                         System.out.println("Diem da sua.");
 
                         menu();
                     case 4:
                         System.out.print("Nhap diem TX2 moi: ");
-                        double newTx2 = sc.nextDouble();
+                        double newTx2 = sc.nextDouble();sc.nextLine();
                         std.setTx2(newTx2);
                         System.out.println("Diem da sua.");
 
                         menu();
                     case 5:
                         System.out.print("Nhap diem KTHP moi: ");
-                        double newKthp = sc.nextDouble();
+                        double newKthp = sc.nextDouble();sc.nextLine();
                         std.setKthp(newKthp);
                         System.out.println("Diem da sua.");
 
                         menu();
                     case 6:
                         System.out.print("Nhap so tiet nghi moi: ");
-                        int newTN = sc.nextInt();
+                        int newTN = sc.nextInt();sc.nextLine();
                         std.setTietNghi(newTN);
                         System.out.println("So tiet nghi da sua.");
                         menu();
@@ -136,7 +136,7 @@ public class StudentDemo {
     }
     //Sap xep
     public static void menuSX() {
-        System.out.println("<<<<<<<<<<<<  Chon cach sap xep  >>>>>>>>>>>");
+        System.out.println("<<<<<<<<<<<<Chon cach sap xep>>>>>>>>>>>");
         System.out.println("1. Theo tuoi");
         System.out.println("2. Theo GPA");
         System.out.println("3. Theo so tiet nghi");
