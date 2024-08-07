@@ -100,10 +100,10 @@ public class Student {
         tietNghi = sc.nextInt();
     }
     public static void printTitle () {
-        System.out.printf("%20s %15s %15s %15s %15s %15s %15s %n","Ten", "Tuoi", "TX1", "TX2", "KTHP", "GPA", "So tiet nghi");
+        System.out.printf("%20s %15s %15s %15s %15s %15s %15s %15s %n","Ten", "Tuoi", "Dia chi", "TX1", "TX2", "KTHP", "GPA", "So tiet nghi");
     }
     public void inDL () {
-        System.out.printf("%20s %15d %15.2f %15.2f %15.2f %15.2f %15d %n", name, getTuoi(), tx1, tx2, kthp, getGPA(), tietNghi);
+        System.out.printf("%20s %15d %15s %15.2f %15.2f %15.2f %15.2f %15d %n", name, getTuoi(), address, tx1, tx2, kthp, getGPA(), tietNghi);
     }
     public String toString () {
         return "";

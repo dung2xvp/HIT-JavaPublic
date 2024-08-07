@@ -82,60 +82,56 @@ public class StudentDemo {
                 menuSuaTT();
                 System.out.print("Nhap lua chon cua ban: ");
                 int input = sc.nextInt();
+                sc.nextLine();
                 switch (input) {
                     case 1:
                         System.out.print("Nhap nam sinh moi: ");
                         int newYob = sc.nextInt();
                         std.setYob(newYob);
                         System.out.println("Nam sinh da sua.");
-                        break Chon;
+                        menu();
                     case 2:
                         System.out.print("Nhap dia chi moi: ");
                         String newAd = sc.nextLine();
                         std.setAddress(newAd);
                         System.out.println("Dia chi da sua.");
-                        break Chon;
+                        menu();
                     case 3:
                         System.out.print("Nhap diem TX1 moi: ");
                         double newTx1 = sc.nextDouble();
                         std.setTx1(newTx1);
                         System.out.println("Diem da sua.");
 
-                        break Chon;
+                        menu();
                     case 4:
                         System.out.print("Nhap diem TX2 moi: ");
                         double newTx2 = sc.nextDouble();
                         std.setTx2(newTx2);
                         System.out.println("Diem da sua.");
 
-                        break Chon;
+                        menu();
                     case 5:
                         System.out.print("Nhap diem KTHP moi: ");
                         double newKthp = sc.nextDouble();
                         std.setKthp(newKthp);
                         System.out.println("Diem da sua.");
 
-                        break Chon;
+                        menu();
                     case 6:
                         System.out.print("Nhap so tiet nghi moi: ");
                         int newTN = sc.nextInt();
                         std.setTietNghi(newTN);
                         System.out.println("So tiet nghi da sua.");
-
-                        break Chon;
+                        menu();
                     case 7:
-                        break;
+                        menu();
                     default:
                         System.out.println("Lua chon khong hop le!");
                         break Chon;
                 }
-                break;
-            }
-            else {
-                System.out.println("Khong tim thay sinh vien!");
-                break;
             }
         }
+        System.out.println("Khong tim thay sinh vien!");
         menu();
     }
     //Sap xep
