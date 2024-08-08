@@ -82,7 +82,6 @@ public class Student {
     //Methods
     public void nhapDL () {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap thong tin sinh vien: ");
         System.out.print("Nhap ten SV: ");
         name = sc.nextLine();
         System.out.print("Nhap nam sinh: ");
