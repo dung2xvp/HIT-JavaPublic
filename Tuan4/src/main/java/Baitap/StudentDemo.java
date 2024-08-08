@@ -208,6 +208,7 @@ public class StudentDemo {
         }
         menu();
     }
+    //Main
     public static void main(String[] args) {
         fakeData();
         menu();
